@@ -1,5 +1,28 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+<!-- a login form where a user enters their credentials to login -->
+<h2>Login Page</h2>
+
+<form action="/action_page.php">
+  <div class="imgcontainer">
+    <img src="https://image.flaticon.com/icons/png/128/78/78373.png" alt="Avatar" class="avatar" >
+  </div>
+<!--  a user is required to enter their email to login-->
+  <div class="container">
+    <label><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="uname" required>
+
+<!-- a user is required to enter their password to login -->
+    <label><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+
+<!-- a user is required to key in the email and password to be able to login   -->
+    <button type="submit">Login</button>
+    <input type="checkbox" checked="checked"> Remember me
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
